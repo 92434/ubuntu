@@ -1,5 +1,4 @@
-FROM tutum/ubuntu:latest
-MAINTAINER x <x@gmail.com>
+FROM ubuntu
 
 COPY sources.list /etc/apt/sources.list
 RUN sudo apt update
