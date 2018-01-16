@@ -2,8 +2,10 @@ FROM tutum/ubuntu:latest
 MAINTAINER x <x@gmail.com>
 
 COPY sources.list /etc/apt/sources.list
-RUN apt update
-RUN apt upgrade
+RUN sudo apt update
+RUN sudo apt autoremove
+RUN sudo apt full-upgrade
+RUN sudo do-release-upgrade
 
 EXPOSE 80
 #ssh端口
