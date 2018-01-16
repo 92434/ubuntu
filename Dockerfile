@@ -1,7 +1,7 @@
 FROM tutum/ubuntu:latest
 MAINTAINER x <x@gmail.com>
 
-COPY default /etc/nginx/sites-available/
+COPY sources.list /etc/apt/sources.list
 RUN apt update
 
 #安装python，redis
