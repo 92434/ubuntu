@@ -1,4 +1,6 @@
 FROM daocloud.io/library/ubuntu:17.10
 
-RUN sudo apt update
-RUN sudo apt full-upgrade
+RUN apt update
+RUN apt-get dist-upgrade
+RUN apt install nmap nmap --fixmissing
+RUN apt install metasploit-framework --fix-missing
