@@ -1,9 +1,4 @@
-FROM ubuntu
+FROM daocloud.io/library/ubuntu:17.10
 
 RUN sudo apt update
-RUN sudo apt autoremove
 RUN sudo apt full-upgrade
-
-EXPOSE 80
-#ssh端口
-EXPOSE 22
