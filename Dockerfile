@@ -1,8 +1,7 @@
-FROM daocloud.io/library/ubuntu:17.10
+FROM ubuntu:17.10
 
-RUN apt update
-RUN apt-get -qqy dist-upgrade
-RUN apt install -yqq nmap zmap --fixmissing
-RUN apt install -yqq metasploit-framework --fix-missing
-RUN apt autoremove
-RUN apt clean
+RUN apt-get update && apt-get install -y \
+  apt install -yqq nmap zmap --fixmissing \ \ \
+  apt install -yqq metasploit-framework --fix-missing \ \
+  apt autoremove \
+  apt clean
