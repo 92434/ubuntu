@@ -1,5 +1,6 @@
-FROM ubuntu:17.10
+FROM ubuntu:16.04
 
-RUN apt-get update && apt-get upgrade -y \
-  wget
-RUN apt-get autoremove && apt-get clean
+RUN apt-get update && apt-get install -y \
+  wget \
+  vim \
+  curl
